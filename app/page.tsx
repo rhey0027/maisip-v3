@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { listWords, ListWords } from "./def/listWords";
+import Link from "next/link";
 
 export default function HangmanGame() {
   // 1. ALL HOOKS MUST BE AT THE VERY TOP
@@ -159,6 +160,12 @@ export default function HangmanGame() {
           </div>
         </div>
       )}
+      <Link
+        href="https://hiddenbrooke.vercel.app"
+        className="text-blue-300 font-light cursor-pointer underline hover:text-blue-500 transition-all duration-150 ease-in-out"
+      >
+        back to hiddenbrooke resort
+      </Link>
     </div>
   );
 }
