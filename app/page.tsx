@@ -73,7 +73,7 @@ export default function HangmanGame() {
 
       <div className="w-full max-w-xl bg-[#DDEBFA] rounded-2rem p-8 shadow-inner border-t-2 border-white/50">
         {/* Word Display (UL/LI) */}
-        <ul className="flex flex-wrap justify-center gap-2 mb-8">
+        <ul className="flex flex-nowrap justify-center gap-1 sm:gap-2 max-w-full px-2 mb-5">
           {word.split("").map((char, i) => {
             const isRevealed = guessed.includes(char);
             return (
